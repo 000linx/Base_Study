@@ -1,0 +1,1 @@
+{"name":"Local: 1033","url":"d:\\c\\oj\\1033.cpp","tests":[{"id":1671274461636,"input":"PUSH 1\nPUSH 3\nTOP\nPOP\nTOP\nPOP\nTOP","output":"3\n1\nE"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\c\\oj\\1033.cpp","group":"local","local":true}
