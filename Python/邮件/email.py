@@ -1,4 +1,7 @@
+from datetime import timedelta
+import random
 import smtplib
+from flask import Flask,session
 from email.mime.text import MIMEText
 from email.header import Header
 
@@ -8,21 +11,24 @@ smtp_server = 'smtp.qq.com'
 smtp_port = 465
 
 # 发件人邮箱账号和授权码
-sender_email = 'test@qq.com'
-sender_password = '授权码'
+sender_email = '1405128011@qq.com'
+sender_password = 'rkguaemrwsijbafa'
 
 # 收件人邮箱账号
-receiver_email = 'test@qq.com'
+receiver_email = '1395468221@qq.com'
+
+
+vertify_code = ''.join([str(random.randint(0, 9)) for _ in range(6)])
 
 # 邮件内容
-subject = '你好马露斌同学'
-body = '你正在尝试修改您的学生服务密码请确认是你本人'
+subject = '你好张皓翔同学'
+body = f'你正在尝试修改您的学生服务密码请确认是你本人操作，验证码为{vertify_code}'
 
 # 创建MIMEText对象
 message = MIMEText(body, 'plain', 'utf-8')
 
 # 设置邮件头部
-message['From'] = f"{Header('Sender Name', 'utf-8')} <{sender_email}>"
+message['From'] = f"{Header('StudentServices', 'utf-8')} <{sender_email}>"
 message['To'] = receiver_email
 message['Subject'] = Header(subject, 'utf-8')
 
