@@ -17,6 +17,7 @@ class Preson:
     num = 100
     @classmethod
     def say_hello(cls):#cls是形参，实参是Preson
+        print(cls)
         print('hello')
     @staticmethod
     def say_world():
@@ -27,6 +28,8 @@ class Preson:
 
 p = Preson()
 #实例对象调用类方法
+p.say_hello(111)
 p.say_hello()
+p.say_world()
 p.update_num()
 print(Preson.num)

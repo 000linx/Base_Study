@@ -1,2 +1,0 @@
-pandas详解
-pandas的数据结构主要由Series （一维数据）与 DataFrame（二维数据）组成
