@@ -17,6 +17,7 @@ class Father(object):
         print('父类的跳舞天赋')
     def run(self):
         print('父类的跑步天赋')
+        
 class Son(Father):#子类继承父类，单继承
     def song(self):#重写父类中的song方法
         print('子类的唱歌天赋')

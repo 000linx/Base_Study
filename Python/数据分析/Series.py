@@ -13,7 +13,7 @@ fastpath:是否使用快速路径,默认为False
 '''
 
 # 创建Series对象
-series_01 = pd.Series([1, 2, 3, 4, 5])
+series_01 = pd.Series([1, 2, 3, 4,'four'])
 # 打印Series对象
 print(series_01)
 
@@ -61,4 +61,22 @@ print("缺失值判断：", s.isnull())
 # 排序
 sorted_s = s.sort_values()
 print("排序后的 Series：", sorted_s)
+
+dic = {
+    '语文': 80,
+    '数学': 90,
+    '英语': 85,
+    '物理': 95,
+    '化学': 88,
+    '生物': 92,
+    '历史': 87,
+    '地理': 91,
+    '政治': 89,
+    '体育': 93
+}
+s = pd.Series(data=dic)
+s1 = s[s > 90]
+print(s)
+print(s1)
+
 

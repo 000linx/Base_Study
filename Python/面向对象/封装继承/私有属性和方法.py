@@ -14,6 +14,7 @@ class User():
     #修改私有属性的值
     def set_sex(self,new_sex):
         self.__sex = new_sex
+        
 c = User()
 print(c.name)
 print(c._age)
