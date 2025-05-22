@@ -3,6 +3,7 @@ import matplotlib.pyplot as plb
 import numpy as np
 import pandas as pd
 
+
 # fig,axes = plb.subplots(1,3,figsize = (12,4))
 # x = np.arange(1,11)
 
