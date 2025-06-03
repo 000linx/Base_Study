@@ -1,0 +1,13 @@
+tensorflow==2.10.0
+opencv-python
+dlib
+seaborn
+umap-learn
+scikit-image
+streamlit
+plotly
+pandas
+numpy
+matplotlib
+scikit-learn
+Pillow
