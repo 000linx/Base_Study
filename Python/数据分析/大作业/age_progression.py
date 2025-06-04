@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
-from tensorflow.kears.model import load_model
+from keras.models import load_model
 import streamlit as st
 
 class AgeProgressionModel:
