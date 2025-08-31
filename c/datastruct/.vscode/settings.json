@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "type_traits": "c",
+        "typeinfo": "c",
+        "cstdlib": "c",
+        "cmath": "c",
+        "limits": "c"
+    }
+}
